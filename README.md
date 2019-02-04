@@ -64,7 +64,7 @@ XYType Example <row><column><value>
 
 Usage: php SolveSudoku.php [param]
 
-Valid File values are:
+Valid Param values are:
   * Example.txt       (Runs a Comma separated list of .txt files
   * -ar or -ArrayType (This Runs all files in the ArrayType Folder.
   * -xy or -XYType    (This Runs all files in the XYType Folder.
