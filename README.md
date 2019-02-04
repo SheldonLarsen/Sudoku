@@ -6,7 +6,7 @@ This was built to solve variable sized Sudoku Puzzles
 The Puzzles must meet the following to be processed:
 * must be .txt file
 * the board must be a square
-* The sub sqaures must also be sqaure. Valid Sizes are (4x4,9x9,16x16,25x25...)
+* The subsquares must also be square. Valid Sizes are (4x4,9x9,16x16,25x25...)
 
  This will process files using one of two storage types. The first is ArrayType. To define a file as array type the file name must start with ar. The other type is XYType. These files are defined using xy as the file names first two characters. Examples for each are below. 
 XYType can only solve 9x9 puzzles.
@@ -70,3 +70,6 @@ Valid File values are:
   * -xy or -XYType    (This Runs all files in the XYType Folder.
   * -fringe or -hard  (This Runs all files in the FringeTests  Folder.
   * -h or -help       (This Help.)
+
+#### Warning:
+The FringeTests folder has various puzzles some test the different sizes (4x4, 16x16, etc.) However, there are two other specialized puzzles. The file ar_puzzle_9x9_HH_01.txt is the hardest puzzle made for humans it was created by Arto Inkala. The other file ar_puzzle_CH_01.txt is the hardest for this algorithm. This puzzle will take more than an hour to solve.
