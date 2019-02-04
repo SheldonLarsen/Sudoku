@@ -12,7 +12,7 @@ try {
             case "-help":
             case "-h":
                 echo "Usage: php SolveSudoku.php [param]";
-                echo "\nValid File values are:";
+                echo "\nValid Param values are:";
                 echo "\n  Example.txt       (Runs a Comma separated list of .txt files";
                 echo "\n  -ar or -ArrayType (This Runs all files in the ArrayType Folder.";
                 echo "\n  -xy or -XYType    (This Runs all files in the XYType Folder.";
