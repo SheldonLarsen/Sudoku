@@ -4,7 +4,7 @@
 
 define("FILE_PATH", './Puzzles');
 
-$files = scandir(FILE_PATH . '/ArrayType');
+$files = scandir(FILE_PATH . '/Unsolved/ArrayType/');
 
 foreach ($files as $fileName) {
 
@@ -14,7 +14,7 @@ foreach ($files as $fileName) {
         $puzzleGrid = [];
 
         //open file to read into puzzle grid
-        $file = fopen(FILE_PATH . "/ArrayType/" . $fileName, 'r');
+        $file = fopen(FILE_PATH . "/Unsolved/ArrayType/" . $fileName, 'r');
         while (!feof($file)) {
             $line = trim(fgets($file));
             if (!empty($line)) {
@@ -34,7 +34,7 @@ foreach ($files as $fileName) {
         }
 
         //Open, save, and close the file
-        $saveFileLocation = FILE_PATH . "/XYType/" . "xy_puzzle" . substr($fileName, -6);
+        $saveFileLocation = FILE_PATH . "/Unsolved/XYType/" . "xy_puzzle" . substr($fileName, -11);
         $saveFile = fopen($saveFileLocation, 'w');
         fwrite($saveFile, $saveValues);
         fclose($saveFile);
