@@ -11,7 +11,7 @@ try {
         switch (strtolower($argv[1])) {
             case "-help":
             case "-h":
-                echo "Usage: php SolveSudoku.php [files]";
+                echo "Usage: php SolveSudoku.php [param]";
                 echo "\nValid File values are:";
                 echo "\n  Example.txt       (Runs a Comma separated list of .txt files";
                 echo "\n  -ar or -ArrayType (This Runs all files in the ArrayType Folder.";
